@@ -160,9 +160,7 @@ img {
    url(/images/page-1/hero-1/hero-backgraund.jpg);
   background-position: center;
   background-size: cover;
-
 }
-
 .hero-title {
   width: 696px;
   margin: 0 auto;
@@ -209,7 +207,6 @@ img {
   line-height: 1.16;
   text-align: center;
 }
-
 .features-list {
   display: flex;
 }
@@ -309,11 +306,9 @@ background-color:var(--accent-txt-color);
 .clients-list{
   display: flex;
   gap: 30px;
-  justify-content: center;
-
+  justify-content: center
 }
 .clients-item{
-
 }
 .clients-link {
   display: flex;
@@ -326,17 +321,15 @@ background-color:var(--accent-txt-color);
   padding: 16px 32px;
 
 }
-.clients-link:hover{
+.clients-link:hover
+.clients-link:focus {
   border: 1px solid var(--accent-txt-color);
 }
 .clients-icon{
-  fill: var(--social-icon);
-     
+  fill: var(--social-icon);    
 }
-.clients-list .clients-item{
-  
-}
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon,{
   fill: var(--accent-txt-color);
 }
 .footer {
@@ -388,16 +381,15 @@ line-height: 1.7;
 .socials-futer {
   display:block;
 }
-
 .socials-futer-title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--whaite-txt-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--whaite-txt-color);
 }
 .socials-futer-list {
   display: flex;
@@ -414,17 +406,15 @@ line-height: 1.7;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
-
 .social-foter-icon {
-
   fill: var(--whaite--bg-color);
 }
-
-.social-futer-link:hover {
+.social-futer-link:hover,
+.social-futer-link:focus{
   background-color: var(--accent-txt-color);
 }
-
-.social-futer-link:hover .social-icon {
+.social-futer-link:hover .social-icon
+.social-futer-link:focus .social-icon {
   fill: var(--whaite--bg-color)
 }
 .portfolio-btn-list {
@@ -477,19 +467,19 @@ line-height: 1.7;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-wrap:hover{
+.portfolio-wrap:hover,
+.portfolio-wrap:focus
+{
   background-color: var(--whaite--bg-color);
     border: 1px solid var(--border-color);
     box-shadow: 0px 1px 1px var(--shadow-color-12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .portfolio-wrap:nth-child(3n) {
   margin-right: 0;
 }
-
-.portfolio-img {
-  margin-bottom: 20px;
-}
 .portfolio-txt {
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
