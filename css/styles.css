@@ -157,7 +157,7 @@ img {
   background-image:linear-gradient(to right, 
   rgba(47, 48, 58, 0.4), 
   rgba(47, 48, 58, 0.4)),
-   url(/images/page-1/hero-1/hero-backgraund.jpg);
+   url(./images/page-1/hero-1/hero-backgraund.jpg);
   background-position: center;
   background-size: cover;
 }
