@@ -31,6 +31,12 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+h1, 
+h2,
+h3,
+p {
+  margin: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,13 +50,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-h1
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 img {
   display: block;
   max-width: 100%;
@@ -74,7 +74,7 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15;
+  padding: 0 15px;
 }
 .wrap-header {
   display: flex;
@@ -144,7 +144,7 @@ img {
   gap: 10px;
 }
 .contact-icon{
-  fill: var(--social-icon);
+  fill: currentColor;
 }
 .item:hover .contact-icon,
 .item:focus .contact-icon{
@@ -152,9 +152,11 @@ img {
 }
 .hero {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding: 200px 0;
+  background-repeat: no-repeat;
 
   background-color: var(--secondary-bg-color);
   background-image:linear-gradient(to right, 
@@ -202,8 +204,6 @@ img {
 }
 .subtitle {
   margin-top: 0;
-  margin-bottom: 0;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -258,11 +258,8 @@ img {
   margin-right: 30px;
 }
 .team-text {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  padding-left:70px;
-  padding-right: 70px;
-  white-space: nowrap;
+  margin-bottom: 16px;
+  padding: 30px 0;
 }
 .team-name {
   margin-bottom: 10px;
@@ -274,6 +271,7 @@ img {
   text-align: center;
 }
 .team-position {
+  padding-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -281,7 +279,6 @@ img {
   color: var(--secondary-txt-color);
 }
 .socials {
-  margin-bottom: 30px;
 justify-content: center;
 display: flex;
 gap: 10px;
@@ -293,22 +290,21 @@ justify-content: center;
 width: 44px;
 height:44px;
 background-color: var(--whaite--bg-color);
+color: var(--social-icon);
 border-radius: 50%;
 }
 .social-icon{
-
-fill: var(--social-icon);
+fill: currentColor;
 }
-.social-link:hover{
+.social-link:hover,
+.social-link:focus
+{
 background-color:var(--accent-txt-color);
-}
-.social-link:hover .social-icon{
-  fill:var(--whaite--bg-color)
+color:var(--whaite--bg-color)
 }
 .clients-list{
   display: flex;
   gap: 30px;
-  justify-content: center
 }
 .clients-item{
 }
@@ -316,32 +312,29 @@ background-color:var(--accent-txt-color);
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-sizing: border-box;
   border: 1px solid var(--social-icon);
   border-radius: 4px;
-  padding: 16px 32px;
-
+  width: 170px;
+  height: 92px;
+  
+  color: var(--social-icon);
 }
-.clients-link:hover
+.clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-txt-color);
+  color: var(--accent-txt-color);
 }
 .clients-icon{
-  fill: var(--social-icon);    
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: var(--accent-txt-color);
+  fill: currentColor;    
 }
 .footer {
-  padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-bg-color);
 }
 .footer-wrap{
   display: flex;
+  align-items: baseline;
 }
 .footer-box{
   margin-right: 70px;
@@ -407,18 +400,16 @@ line-height: 1.7;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--social-icon);
   border-radius: 50%;
 }
 .social-foter-icon {
-  fill: var(--whaite--bg-color);
+  fill: currentColor;
 }
 .social-futer-link:hover,
 .social-futer-link:focus{
   background-color: var(--accent-txt-color);
-}
-.social-futer-link:hover .social-icon
-.social-futer-link:focus .social-icon {
-  fill: var(--whaite--bg-color)
+  color: var(--whaite--bg-color);
 }
 .portfolio-btn-list {
   display: flex;
@@ -470,12 +461,13 @@ line-height: 1.7;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-wrap:hover,
-.portfolio-wrap:focus
+.portfolio-link{
+  display: block;
+}
+.portfolio-link:hover,
+.portfolio-link:focus
 {
-  background-color: var(--whaite--bg-color);
-    border: 1px solid var(--border-color);
-    box-shadow: 0px 1px 1px var(--shadow-color-12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   box-shadow: 0px 1px 1px var(--shadow-color-12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-wrap:nth-child(3n) {
   margin-right: 0;
