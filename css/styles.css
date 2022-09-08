@@ -61,6 +61,9 @@ img {
   margin: 0;
   list-style: none;
 }
+.link {
+  text-decoration: none;
+}
 .page-header {
   border-bottom: 1px solid var(--line-color);
 }
@@ -83,7 +86,6 @@ img {
 .header-logo {
   margin-right: 93px;
 
-  text-decoration: none;
   color: var(--black-txt-color);
   font-family: var(--secondary-font);
   font-style: normal;
@@ -113,7 +115,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  text-decoration: none;
+  
   color: var(--primery-txt-color);
   font-weight: 500;
   line-height: 1.14;
@@ -127,7 +129,6 @@ img {
   margin-left: 50px;
 }
 .contact-item {
-  text-decoration: none;
   color: var(--secondary-txt-color);
   font-weight: 500;
   font-size: 14px;
@@ -258,7 +259,6 @@ img {
   margin-right: 30px;
 }
 .team-text {
-  margin-bottom: 16px;
   padding: 30px 0;
 }
 .team-name {
@@ -340,7 +340,6 @@ color:var(--whaite--bg-color)
   margin-right: 70px;
 }
 .logo-footer {
-  text-decoration: none;
   color: var(--whaite-txt-color);
   font-family: var(--secondary-font);
   font-style: normal;
@@ -360,12 +359,10 @@ color:var(--whaite--bg-color)
   margin-bottom: 9px;
 }
 .adress { color: var(--whaite-txt-color);
-text-decoration: none;
 font-style: normal;
 line-height: 1.7;
 }
 .adress-contact {
-  text-decoration: none;
   color: var(--whaite--bg-color-60);
   font-style: normal;
   line-height: 1.7;
@@ -400,25 +397,28 @@ line-height: 1.7;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--social-icon);
+  color: var(--whaite--bg-color);
   border-radius: 50%;
 }
 .social-foter-icon {
   fill: currentColor;
 }
+    
 .social-futer-link:hover,
-.social-futer-link:focus{
-  background-color: var(--accent-txt-color);
-  color: var(--whaite--bg-color);
-}
+.social-futer-link:focus {
+background-color: var(--accent-txt-color);
+ }
+    
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+    
 .portfolio-btn-list .item:not(:last-child) {
   margin-right: 8px;
 }
+    
 .portfolio-btn {
   white-space: nowrap;
   padding-top: 6px;
@@ -427,7 +427,7 @@ line-height: 1.7;
   padding-right: 22px;
   border: none;
   border-radius: 4px;
-
+    
   background-color: var(--section-bg-color);
   color: var(--primery-txt-color);
   font-family: inherit;
